@@ -1,29 +1,22 @@
-import Gallery from 'react-photo-gallery';
+import Gallery from 'react-image-show';
 import React from 'react';
 
-export default class Sample extends React.Component {
+class Sample extends React.Component {
    
     render() {
-        const events = this.props.work.map(event => {
-           return { src: event.img,
-                    width: 1,
-                    height: 1
-                  }
-        });
+        const events = this.props.work.map(event =>event.img);
+
         return (
-            <Gallery photos={events} />
+            <Gallery images={events}
+            width="920px"
+            imagesWidth="800px"
+            imagesHeight="450px"
+            imagesHeightMobile="56vw"
+            thumbnailsWidth="920px"
+            thumbnailsHeight="12vw"
+            indicators thumbnails imagesWidth fixedImagesHeight />
         );
     }
-}
-const PHOTO_SET = [
-  {
-    src: 'http://example.com/example/img1.jpg',
-    width: 4,
-    height: 3
-  },
-  {
-    src: 'http://example.com/example/img2.jpg',
-    width: 1,
-    height: 1
-  }
-];
+};
+
+export default Sample;
