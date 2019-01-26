@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sharp": "^2.0.14",
     "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-javascript-static-exports": "^2.1.4",
     "gatsby-transformer-sharp": "^2.1.8",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
@@ -30,6 +31,9 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "prettier": "^1.15.2"
   },
   "repository": {
