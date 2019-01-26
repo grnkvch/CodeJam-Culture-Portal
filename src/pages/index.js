@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 import "./index.css";
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <h3 style={{textAlign:'center'}}>Информация на данном портале посвящена <br/> "Белорусскому союзу архитекторов"</h3>
     <div className="description">
@@ -24,3 +24,19 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allJavascriptFrontmatter {
+      edges {
+        node {
+        id
+          frontmatter {
+            path
+            name
+          }
+        }
+      }
+    }
+  }
+`
