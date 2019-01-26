@@ -3,20 +3,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-// import {data} from '../../public/static/d/1025518380.json';
 
 // import "./AuthorOfTheDay.css";
 
-class AuthorOfTheDay extends React.Component {
-	render(){
-		console.log();
-		return (
-	 		<div>
-	 			<img src="/"></img>
-	 			<p>Текст</p>
-	 		</div>
-		 )
+const AuthorOfTheDay = ({data})=>{
+	console.log(data);
+	if(data){
+		return(
+			<div>
+				<h1>{data.javascriptFrontmatter.frontmatter.name}</h1>
+			</div>
+		)
 	}
+	return <div></div>
 }
-
 export default AuthorOfTheDay
