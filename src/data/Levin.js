@@ -40,6 +40,8 @@ exports.frontmatter = {
        img: "https://upload.wikimedia.org/wikipedia/commons/9/93/9_may_2010_Minsk_051.jpg"
       },
       {title: "Шуневка (мемориальный комплекс «Проклятие фашизму»)",
+       width: 54.8356246,
+       length: 27.8845197,
        date: "1979",
        img: "https://belkraj.by/sites/default/files/uploads/landmark/gallery/shunevka-2_1.jpg"
       },

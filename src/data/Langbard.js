@@ -54,6 +54,8 @@ exports.frontmatter = {
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Gouvernementbelarus.JPG/1024px-Gouvernementbelarus.JPG"
       },
       {title: "Памятник Чапаеву (Самара)",
+       width: 53.19692825,
+       length: 50.09692701,
        date: "1932",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A7%D0%B0%D0%BF%D0%B0%D0%B5%D0%B2%D1%83.jpg/800px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A7%D0%B0%D0%BF%D0%B0%D0%B5%D0%B2%D1%83.jpg"
       },

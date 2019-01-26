@@ -23,11 +23,9 @@ exports.frontmatter = {
       },
     ],
     work: [
-      {title: "Здание КГБ в Минске",
-       date: "1947",
-       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Minsk_skaryny_ave_02.jpg/800px-Minsk_skaryny_ave_02.jpg?uselang=ru"
-      },
       {title: "Здание Нацбанка РБ",
+       width: 53.889609,
+       length: 27.541403,
        date: "1991",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/NBRB.JPG/800px-NBRB.JPG?uselang=ru"
       },

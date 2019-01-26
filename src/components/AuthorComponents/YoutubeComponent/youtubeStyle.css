@@ -1,0 +1,13 @@
+div.openModal {
+    width:45%;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: .8em 1em calc(.8em + 3px);
+    margin: 20px auto;
+    border-radius: 3px;
+    background: #61b8ff;
+    box-shadow: 0 -3px #4a84b4 inset;
+    transition: 0.2s;
+  } 
+div.openModal:hover { background: #3fa9ff; }

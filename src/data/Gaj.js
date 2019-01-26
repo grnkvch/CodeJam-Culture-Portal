@@ -2,9 +2,8 @@ exports.frontmatter = {
     path: '/Gaj',
     name: "Генрих Юлиан Гай",
     date:"10 января 1875 — 3 октября 1936",
-    img: "",
+    img: "default.jpg",
     vita: "Архитектор и инженер польского происхождения, который в начале XX века. работал в Российской империи, а потом в Польше. Работал в стиле неоклассицизма. Автор проектов многих зданий в Варшаве, Минске, Киеве и в других местах Российской империи. В межвоенный период — воеводской архитектор в Пинске.",
-    img: "",
     timelineData: [
       {date: "1875",
        text: "Родился 10 января 1875 года в Варшаве, в Царстве Польском, сын Генриха и Йоанны (в девичестве Мюллер (Müller)). Происходил из польской шляхты. Его дед, Якуб Гай, был архитектором, спроектировал, среди прочих здание Банка польского в Варшаве."
@@ -36,6 +35,8 @@ exports.frontmatter = {
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/POL_Pruszkow_zbikow_church.jpg/450px-POL_Pruszkow_zbikow_church.jpg?uselang=ru"
       },
       {title: "Бессарабский рынок в Киеве",
+       width: 50.44242145,
+       length: 30.52161393,
        date: "1910—1912",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/KIev-KhreshchatykStr-BessarabskyiMarket.jpg/800px-KIev-KhreshchatykStr-BessarabskyiMarket.jpg?uselang=ru"
       },
@@ -43,9 +44,5 @@ exports.frontmatter = {
        date: "",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Dw%C3%B3r_w_Zawadzie.JPG/800px-Dw%C3%B3r_w_Zawadzie.JPG?uselang=ru"
       },
-      {title: "Церковь в Волковичах около Минска",
-       date: "",
-       img: "Церковь в Волковичах около Минска"
-      }
     ]
   };
