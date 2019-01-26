@@ -39,5 +39,10 @@ exports.frontmatter = {
        date: "1936",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Buildings_in_Yaroslavl_009.jpg/800px-Buildings_in_Yaroslavl_009.jpg?uselang=ru"
       }
+    ],
+    video: [
+      {title: "«У парадного подъезда. Здание КГБ Минска»",
+       url: "https://www.youtube.com/watch?v=mrfadR51D0I"
+      }
     ]
   };

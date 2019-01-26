@@ -47,5 +47,6 @@ exports.frontmatter = {
        date: "",
        img: "Церковь в Волковичах около Минска"
       }
-    ]
+    ],
+    video: []
   };
