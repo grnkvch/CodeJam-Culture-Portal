@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import List from '../components/list'
 import Layout from '../components/layout'
-import Image from '../components/image'
+import "./index.css";
 
 class IndexPage extends React.Component
   {
@@ -15,9 +14,9 @@ class IndexPage extends React.Component
     }
     render(){
       return (<Layout>
-        <h1>Белорусские архитекторы</h1>
+        <h2>Белорусские архитекторы</h2>
         <from>
-          <input onChange={this.handleChange}>
+        <label>Поиск  </label><input onChange={this.handleChange}>
           </input>
         </from>
         <List items={this.state.items} />
@@ -26,11 +25,10 @@ class IndexPage extends React.Component
     }
 
     handleChange(e) {
-      console.log(this.data);
       this.setState({
         items: this.data.allJavascriptFrontmatter.edges.filter((item)=>{
           if (!e.target.value) return true;
-          return item.node.frontmatter.name.includes(e.target.value)
+          return item.node.frontmatter.name.toLowerCase().includes(e.target.value.toLowerCase())
         })
       })
     }
@@ -39,7 +37,7 @@ class IndexPage extends React.Component
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query SearchQuery {
     allJavascriptFrontmatter {
       edges {
         node {

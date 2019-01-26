@@ -12,3 +12,26 @@
 .Balashov:hover{
 	color: #3d3d3d;
 }
+
+a {
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #292929;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+}
+
+input {
+	margin-bottom: 20px;
+}
