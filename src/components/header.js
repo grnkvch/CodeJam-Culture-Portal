@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import "./header.css"
@@ -29,8 +28,8 @@ const Header = () => (
         </Link>
       </h1>
       <nav className="navHeader">
-        <div><a href="/">На главную</a></div>
-        <div><a href="/">К списку архитекторов</a></div>
+        <div><a><Link to="/">На главную</Link></a></div>
+        <div><a><Link to="/search">К списку архитекторов</Link></a></div>
       </nav>
     </div>
   </div>
