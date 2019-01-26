@@ -71,6 +71,9 @@ query authorOfTheDay {
   javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
     frontmatter {
       name
+      img
+      date
+      path
      }
     }
   }`
