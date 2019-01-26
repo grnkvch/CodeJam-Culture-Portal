@@ -23,7 +23,7 @@ const arcPage = ({data}) => {
       <div id="masterpiece" className="title" style={{ textAlign: 'center'}}><h1>Masterpiece</h1></div>
       <TableComponent work={arc.work} />
       <div id="youtube" className="title" style={{ textAlign: 'center'}}><h1>Youtube</h1></div>
-      <YoutubeComponent videoId="ULj6eH5YfAw" />
+      <YoutubeComponent videoId={arc.videoId} />
       <div id="map" className="title" style={{ textAlign: 'center'}}><h1>Map</h1></div>
       <MapComponent work={arc.work}/>
       <div id="gallery" className="title" style={{ textAlign: 'center'}}><h1>Gallery</h1></div>
@@ -42,6 +42,7 @@ export const postQuery = graphql`
         name
         vita
         img
+        videoId
         timelineData {
           date
           text

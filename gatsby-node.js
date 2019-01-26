@@ -21,6 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
               name
               date
               img
+              videoId
               timelineData {
                 date
                 text
