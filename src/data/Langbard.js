@@ -85,5 +85,16 @@ exports.frontmatter = {
        date: "1939",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ministry_of_Foreign_Affairs_of_Ukraine.JPG/1024px-Ministry_of_Foreign_Affairs_of_Ukraine.JPG"
       }
+    ],
+    video: [
+      {title: "«Обратный отсчёт. Иосиф Лангбард. Драма архитектора. Фильм первый»",
+       url: "https://www.youtube.com/watch?v=dlQIlW3V-iU"
+      },
+      {title: "«Лангбард Иосиф (2016)»",
+       url: "https://www.youtube.com/watch?v=xsZke0e0KHc"
+      },
+      {title: "«Иосиф Лангбард: выставка наследия известного архитектора к его 135-летию»",
+       url: "https://www.youtube.com/watch?v=qhrEZEuYvjE"
+      }
     ]
   };

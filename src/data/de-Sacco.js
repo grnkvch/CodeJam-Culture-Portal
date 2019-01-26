@@ -50,5 +50,18 @@ exports.frontmatter = {
        date: "XVIII век",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%D0%BE%D0%B2%D0%BE.JPG/800px-%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%D0%BE%D0%B2%D0%BE.JPG?uselang=ru"
       }
+    ],
+    video: [
+      {title: "«Тропы. Усадьба Станиславово» здание спроектированное Джузеппе де Сакко",
+       url: "https://www.youtube.com/watch?v=cbTPoLwLW4c"
+      },
+      {
+        title: "«Святск - Дворцово-парковый ансамбль 18-го века» спроектирован Джузеппе де Сакко",
+       url: "https://www.youtube.com/watch?v=OY9OT3ehQ5I"
+      },
+      {
+        title: "«Тропы. Площадь Тызенгауза»",
+       url: "https://www.youtube.com/watch?v=JNMltVazEP8"
+      }
     ]
   };

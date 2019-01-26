@@ -50,5 +50,10 @@ exports.frontmatter = {
        date: "1966",
        img: "https://dic.academic.ru/pictures/wiki/files/66/Belarus-Minsk-BSU-Entrance_into_Main_Building.jpg"
      }
+    ],
+    video: [
+      {title: "«Кинотеатр Победа празднует 35-летие». Автором проекта здания является И. Лангбард, М. Бакланов",
+       url: "https://www.youtube.com/watch?v=QFZ1hAV0gf8"
+      }
     ]
   };

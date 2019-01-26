@@ -63,5 +63,16 @@ exports.frontmatter = {
        date: "1980 - 1986",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Traeckaje_suburb-4.jpg/1024px-Traeckaje_suburb-4.jpg"
       }
+    ],
+    video: [
+      {title: "«Белорусский архитектор Леонид Левин»",
+       url: "https://www.youtube.com/watch?v=P2-yBJvcJUo"
+      },
+      {title: "«Леонид Левин». Архитектор Леонид Левин рассказывает о памятнике «Хатынь», который он создал.",
+       url: "https://www.youtube.com/watch?v=5XRVOs91r3M"
+      },
+      {title: "«Монолог. Леонид Левин». Документальный фильм. (Беларусь, 2012)",
+       url: "https://www.youtube.com/watch?v=t8D81wMrwBw"
+      }
     ]
   };
