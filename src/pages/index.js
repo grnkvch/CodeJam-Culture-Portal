@@ -66,7 +66,6 @@ return (
 } 
 
 export default IndexPage
-
 export const postQuery = graphql`
 query authorOfTheDay {
   javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
