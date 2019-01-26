@@ -28,8 +28,8 @@ const Header = () => (
         </Link>
       </h1>
       <nav className="navHeader">
-        <div><a><Link to="/">На главную</Link></a></div>
-        <div><a><Link to="/search">К списку архитекторов</Link></a></div>
+        <div><Link to="/">На главную</Link></div>
+        <div><Link to="/search">К списку архитекторов</Link></div>
       </nav>
     </div>
   </div>
