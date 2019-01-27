@@ -5,9 +5,9 @@ import { Link } from 'gatsby';
 import './AuthorOfTheDay.css';
 
 const AuthorOfTheDay = ({data})=>{
-	const src = data.javascriptFrontmatter.frontmatter;
-	if(data){
-
+	console.error(data);
+	if(data.javascriptFrontmatter){
+		const src = data.javascriptFrontmatter.frontmatter;
 		return(
 			<div className="authorOfTheDay" style={{margin: `20px`}}>
 				<h3 className="authorOfTheDay_title">Автор дня</h3>

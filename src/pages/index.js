@@ -75,13 +75,13 @@ query($lng: String!) {
       ...TranslationFragment
     }
 
-  javascriptFrontmatter(frontmatter: { path: { eq: $originalPath}, lng: { eq: $lng }  }) { 
-    frontmatter {
-      name
-      img
-      date
-      path
-      vita
-     }
-    }
+    javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
+      frontmatter {
+        name
+        img
+        date
+        path
+        vita
+       }
+      }
   }`
