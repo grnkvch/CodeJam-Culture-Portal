@@ -7,7 +7,6 @@ import "./header.css"
 const Header = () => (
   <div
     style={{
-      background: `rebeccapurple`,
       height: `160px`,
       marginBottom: '30px'
     }}
@@ -22,7 +21,7 @@ const Header = () => (
       <h1 style={{ margin: "0  auto", width: "480px"}}>
         <Link
           to="/"
-          style={{color: `white`,textDecoration: `none`}}
+          style={{textDecoration: `none`}}
         >
           Архитекторы Беларуси
         </Link>
