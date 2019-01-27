@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-i18next`,
       options: {
-        availableLngs: ['en', 'ru'],
+        availableLngs: ['en', 'ru', 'by'],
         fallbackLng: 'en',
         saveMissing: true,
         debug: true,

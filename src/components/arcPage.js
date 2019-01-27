@@ -29,15 +29,15 @@ const arcPage = ({data, t}) => {
         <div className="image-title" style={{marginTop: '120px'}}><img src={image} alt="Author's picture" /></div>
         <div style={{ textAlign: 'center', fontSize: '30px' }}>{arc.name}</div>
         <div style={{ textAlign: 'center', fontSize: '20px' }}>{arc.vita}</div>
-        <div id="timeline" className="title" style={{ textAlign: 'center'}}><h1>Timeline</h1></div>
+        <div id="timeline" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcTimeline`)}</h1></div>
         <TimeLineComponent  timelineData={arc.timelineData} />
-        <div id="masterpiece" className="title" style={{ textAlign: 'center'}}><h1>Masterpiece</h1></div>
+        <div id="masterpiece" className="title" style={{ textAlign: 'center'}}><h1>{t(`Masterpiece`)}</h1></div>
         <TableComponent work={arc.work} />
         <div id="youtube" className="title" style={{ textAlign: 'center'}}><h1>Youtube</h1></div>
         <YoutubeComponent videoId={arc.videoId} />
-        <div id="map" className="title" style={{ textAlign: 'center'}}><h1>Map</h1></div>
+        <div id="map" className="title" style={{ textAlign: 'center'}}><h1>{t(`Map`)}</h1></div>
         <MapComponent work={arc.work}/>
-        <div id="gallery" className="title" style={{ textAlign: 'center'}}><h1>Gallery</h1></div>
+        <div id="gallery" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcGallery`)}</h1></div>
         <GalleryComponent work={arc.work}/>
       </Fragment>
     </Layout>);
