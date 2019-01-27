@@ -10,7 +10,7 @@ import './layout.scss'
 const Layout = ({ children, data, t }) => (
       <>
         <Head hreflang>
-        <title>{t('Gatsby I18next')}</title>
+        <title>{t(`siteTitle`)}</title>
         <meta name="description" content="Example Gatsby site with i18next" />
         <meta name="keywords" content="gatsby, react, i18next" />
       </Head>
