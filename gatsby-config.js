@@ -37,11 +37,23 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
-      
+    },
+    {
+      resolve: `gatsby-plugin-i18next`,
+      options: {
+        availableLngs: ['en', 'ru'],
+        fallbackLng: 'en',
+        saveMissing: true,
+        debug: true,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locale`,
+        name: `locale`,
+      },
     },
     'gatsby-transformer-javascript-frontmatter',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 };
