@@ -1,17 +1,10 @@
 import { Link } from 'gatsby-plugin-i18next';
 import React from 'react'
 import LanguageSwitcher from './languageSwitcher';
-
 import "./header.css"
 
-  
 const Header = ({ t }) => (
-  <div
-    style={{
-      height: `160px`,
-      marginBottom: '30px'
-    }}
-  >
+  <div className = "header-wrapper">
     <div
       style={{
         margin: `0 auto`,
@@ -19,10 +12,9 @@ const Header = ({ t }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: "0  auto", width: "480px"}}>
-        <Link
+      <h1 className="headLogo">
+        <Link 
           to="/"
-          style={{textDecoration: `none`}}
         >
           {t(`headTitle`)}
         </Link>
