@@ -75,7 +75,7 @@ query($lng: String!) {
       ...TranslationFragment
     }
 
-  javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
+  javascriptFrontmatter(frontmatter: { path: { eq: $originalPath}, lng: { eq: $lng }  }) { 
     frontmatter {
       name
       img

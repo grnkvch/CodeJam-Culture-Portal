@@ -19,6 +19,6 @@ const AuthorOfTheDay = ({data})=>{
 			</div>
 		)
 	}
-	return <div></div>
+	return <div><h3 className="authorOfTheDay_title">Автор дня</h3></div>
 }
 export default AuthorOfTheDay
