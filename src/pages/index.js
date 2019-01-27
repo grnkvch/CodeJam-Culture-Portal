@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-i18next';
+import { withNamespaces } from 'react-i18next';
+import { withI18next } from 'gatsby-plugin-i18next';
 
 import Layout from '../components/layout'
 import Team from '../components/Team';
@@ -42,11 +44,11 @@ const team = [
 
 ];
 
-const IndexPage = ({data}) =>{
-console.log(data);
+const IndexPage = ({data, t}) =>{
+
 return (
   <Layout>
-    <h3 style={{textAlign:'center'}}>Информация на данном портале посвящена <br/> "Белорусскому союзу архитекторов"</h3>
+    <h3 style={{textAlign:'center'}}>{t(`Информация на данном портале посвящена`)} <br/> "Белорусскому союзу архитекторов"</h3>
     <div className="description">
       <p>Белорусскому союзу архитекторов уже исполнилось 70 лет. Его история — часть истории страны и народа, его созидательной деятельности. Пройден большой и сложный путь — путь поиска и воплощения, ошибок и достижений. И сегодняшняя Беларусь являет миру свое прекрасное обновленное лицо благодаря таланту и умению, профессиональному мастерству Архитекторов, чьим неутомимым трудом на протяжении многих лет прирастала сокровищница белорусского зодчества.</p>
       <div style={{marginTop :"12px"}}>
@@ -65,9 +67,14 @@ return (
 )
 } 
 
-export default IndexPage
+export default withI18next()(withNamespaces()(IndexPage));
+
 export const postQuery = graphql`
-query authorOfTheDay {
+query($lng: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+      ...TranslationFragment
+    }
+
   javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
     frontmatter {
       name
