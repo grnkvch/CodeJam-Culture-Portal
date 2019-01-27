@@ -81,6 +81,7 @@ query($lng: String!) {
       img
       date
       path
+      vita
      }
     }
   }`

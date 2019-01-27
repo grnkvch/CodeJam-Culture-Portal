@@ -5,6 +5,7 @@ import { withI18next } from 'gatsby-plugin-i18next';
 import List from '../components/list'
 import Layout from '../components/layout'
 import "./index.css";
+import "./search.css";
 
 class SearchPage extends React.Component
   {
@@ -20,9 +21,8 @@ class SearchPage extends React.Component
     render(){
       return (<Layout>
         <h2>Белорусские архитекторы</h2>
-        <label>Поиск  <input onChange={this.handleChange}>
-          </input></label>
-        <List items={this.state.items} t={this.t}/>
+        <input type="search" placeholder="Search" onChange={this.handleChange}></input>
+        <List items={this.state.items} />
       </Layout>
     )
     }

@@ -1,5 +1,6 @@
 import { Link } from 'gatsby-plugin-i18next';
 import React from 'react'
+import "./list.css";
 
 export default class list extends React.Component {
   render() {
@@ -21,7 +22,6 @@ export default class list extends React.Component {
     } else {
       return (<li>There's no results, try another laguage section</li>)
     }
-    
   }
 }
 
