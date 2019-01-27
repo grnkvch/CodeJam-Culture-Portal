@@ -20,8 +20,8 @@ class SearchPage extends React.Component
     }
     render(){
       return (<Layout>
-        <h2>Белорусские архитекторы</h2>
-        <input type="search" placeholder="Search" onChange={this.handleChange}></input>
+        <h2>{this.t(`srchTitle`)}</h2>
+        <input type="search" placeholder={this.t(`srchPlaceholder`)} onChange={this.handleChange}></input>
         <List items={this.state.items} />
       </Layout>
     )
