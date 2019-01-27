@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby-plugin-i18next';
 import { withNamespaces } from 'react-i18next';
 import { withI18next } from 'gatsby-plugin-i18next';
 
 import List from '../components/list'
 import Layout from '../components/layout'
 import "./index.css";
+import "./search.css";
 
 class SearchPage extends React.Component
   {
@@ -13,21 +13,22 @@ class SearchPage extends React.Component
       super({data, t});
       this.t = t;
       this.data = data;
-      this.state = { items: this.data.allJavascriptFrontmatter.edges, text:''};
+      this.state = { text:''};
+      if (this.data.allJavascriptFrontmatter) this.state.items = this.data.allJavascriptFrontmatter.edges
+      else this.state.items = [];
       this.handleChange = this.handleChange.bind(this);
-      // this.handleSubmit = this.handleSubmit.bind(this);
     }
     render(){
       return (<Layout>
         <h2>Белорусские архитекторы</h2>
-        <label>Поиск  <input onChange={this.handleChange}>
-          </input></label>
-        <List items={this.state.items} t={this.t}/>
+        <input type="search" placeholder="Search" onChange={this.handleChange}></input>
+        <List items={this.state.items} />
       </Layout>
     )
     }
 
     handleChange(e) {
+      if (!this.data.allJavascriptFrontmatter) return;
       this.setState({
         items: this.data.allJavascriptFrontmatter.edges.filter((item)=>{
           if (!e.target.value) return true;

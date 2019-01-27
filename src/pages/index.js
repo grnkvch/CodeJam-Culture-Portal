@@ -48,7 +48,7 @@ const IndexPage = ({data, t}) =>{
 
 return (
   <Layout>
-    <h3 style={{textAlign:'center'}}>Информация на данном портале посвящена <br/> "Белорусскому союзу архитекторов"</h3>
+    <h3 style={{textAlign:'center'}}>{t(`Информация на данном портале посвящена`)} <br/> "Белорусскому союзу архитекторов"</h3>
     <div className="description">
       <p>Белорусскому союзу архитекторов уже исполнилось 70 лет. Его история — часть истории страны и народа, его созидательной деятельности. Пройден большой и сложный путь — путь поиска и воплощения, ошибок и достижений. И сегодняшняя Беларусь являет миру свое прекрасное обновленное лицо благодаря таланту и умению, профессиональному мастерству Архитекторов, чьим неутомимым трудом на протяжении многих лет прирастала сокровищница белорусского зодчества.</p>
       <div style={{marginTop :"12px"}}>
@@ -75,12 +75,13 @@ query($lng: String!) {
       ...TranslationFragment
     }
 
-  javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
-    frontmatter {
-      name
-      img
-      date
-      path
-     }
-    }
+    javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
+      frontmatter {
+        name
+        img
+        date
+        path
+        vita
+       }
+      }
   }`
