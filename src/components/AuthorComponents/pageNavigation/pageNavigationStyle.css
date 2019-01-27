@@ -16,6 +16,8 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  background-color: rgba(30, 144, 255, 1);
+  color: white;
 }
 
 .pageNavigationWrapper a.logo {
@@ -25,7 +27,6 @@
 
 .pageNavigationWrapper a:hover {
   background-color: #ddd;
-  color: black;
 }
 
 .pageNavigationWrapper a.active {

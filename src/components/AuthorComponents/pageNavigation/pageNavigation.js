@@ -18,7 +18,7 @@ class pageNavigation extends React.Component {
         return (
         <div className="pageNavigationWrapper">
             <div className="pageNavigation">
-                <a className="active" href="/"><FontAwesomeIcon icon = {faHome} /></a>
+                <Link to="#timeline"><FontAwesomeIcon icon = {faHome} /></Link>
                 <a className="active" href="#timeline"><FontAwesomeIcon icon = {faCalendarAlt} /></a>
                 <a className="active" href="#youtube"><FontAwesomeIcon icon = {faYoutube} /></a>
                 <a className="active" href="#map"><FontAwesomeIcon icon = {faMapMarked} /> </a>

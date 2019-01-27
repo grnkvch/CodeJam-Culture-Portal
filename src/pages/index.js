@@ -61,7 +61,7 @@ return (
       <p>{t(`indDescrFours`)}</p>
       <span style={{display: 'block'}}>{t(`indDescrFifth`)}</span>
     </div>
-    <AuthorOfTheDay data={data}/>
+    <AuthorOfTheDay data={data} t={ t }/>
     <Team data={team}/>
   </Layout>
 )
@@ -75,8 +75,9 @@ query($lng: String!) {
       ...TranslationFragment
     }
 
-    javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"} }) { 
+    javascriptFrontmatter(frontmatter: { authorOfTheDay: { eq: "true"}, lng: { eq: $lng } }) { 
       frontmatter {
+        lng
         name
         img
         date
