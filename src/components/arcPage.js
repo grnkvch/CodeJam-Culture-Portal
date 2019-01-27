@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
+import { withNamespaces } from 'react-i18next';
+import { withI18next } from 'gatsby-plugin-i18next';
+
 
 import TimeLineComponent from './AuthorComponents/TimeLineComponent/TimeLineComponent';
 import YoutubeComponent from './AuthorComponents/YoutubeComponent/YoutubeComponent';
@@ -10,12 +13,14 @@ import Header from './header';
 import TableComponent from './AuthorComponents/TableComponent/TableComponent';
 import GalleryComponent from './AuthorComponents/GalleryComponent/GalleryComponent';
 import './AuthorComponents/author.css';
-const arcPage = ({data}) => {
+
+
+const arcPage = ({data, t}) => {
   const arc = data.javascriptFrontmatter.frontmatter;
   const image = require(`../images/${arc.img}`);
   return (
     <Fragment>
-      <Header />
+      <Header t={t}/>
       <PageNavigation />
       <div className="image-title" style={{marginTop: '120px'}}><img src={image} alt="Author's picture" /></div>
       <div style={{ textAlign: 'center', fontSize: '30px' }}>{arc.name}</div>
@@ -34,11 +39,16 @@ const arcPage = ({data}) => {
   
 }
 
-export default arcPage;
+export default withI18next()(withNamespaces()(arcPage));
 
 export const postQuery = graphql`
-  query arcPageByPath($path: String!) {
-    javascriptFrontmatter(frontmatter: { path: { eq: $path} }) {
+query($lng: String!, $originalPath: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+      ...TranslationFragment
+    }
+
+
+    javascriptFrontmatter(frontmatter: { path: { eq: $originalPath} }) {
       frontmatter {
         path
         name

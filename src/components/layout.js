@@ -1,24 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { withNamespaces } from 'react-i18next';
+import { Head } from 'gatsby-plugin-i18next';
+
 
 import Header from './header'
 import './layout.scss'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
+const Layout = ({ children, data, t }) => (
       <>
-        <Header />
+        <Head hreflang>
+        <title>{t('Gatsby I18next')}</title>
+        <meta name="description" content="Example Gatsby site with i18next" />
+        <meta name="keywords" content="gatsby, react, i18next" />
+      </Head>
+        <Header t={ t }/>
         <div style={{
               margin: `0 auto`,
               maxWidth: 960,
@@ -28,12 +24,10 @@ const Layout = ({ children }) => (
           {children}
         </div>
       </>
-    )}
-  />
-)
+    )
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default withNamespaces()(Layout);

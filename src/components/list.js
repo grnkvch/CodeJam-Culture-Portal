@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-i18next';
 import React from 'react'
 
 export default class list extends React.Component {

@@ -1,10 +1,11 @@
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-i18next';
 import React from 'react'
+import LanguageSwitcher from './languageSwitcher';
 
 import "./header.css"
 
   
-const Header = () => (
+const Header = ({ t }) => (
   <div
     style={{
       height: `160px`,
@@ -23,13 +24,22 @@ const Header = () => (
           to="/"
           style={{textDecoration: `none`}}
         >
-          Архитекторы Беларуси
+          {t(`Архитекторы Беларуси`)}
         </Link>
       </h1>
       <nav className="navHeader">
         <div><Link to="/">На главную</Link></div>
         <div><Link to="/search">К списку архитекторов</Link></div>
       </nav>
+      <div
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}
+    >
+      <LanguageSwitcher />
+    </div>
     </div>
   </div>
 );
