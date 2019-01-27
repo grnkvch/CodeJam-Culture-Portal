@@ -15,10 +15,8 @@ class IndexPage extends React.Component
     render(){
       return (<Layout>
         <h2>Белорусские архитекторы</h2>
-        <from>
-        <label>Поиск  </label><input onChange={this.handleChange}>
-          </input>
-        </from>
+        <label>Поиск  <input onChange={this.handleChange}>
+          </input></label>
         <List items={this.state.items} />
       </Layout>
     )
