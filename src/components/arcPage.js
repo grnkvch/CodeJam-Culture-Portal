@@ -35,7 +35,7 @@ const arcPage = ({data, t}) => {
         <TableComponent work={arc.work} />
         <div id="youtube" className="title" style={{ textAlign: 'center'}}><h1>Youtube</h1></div>
         <YoutubeComponent videoId={arc.videoId} t={ t } />
-        <div id="map" className="title" style={{ textAlign: 'center'}}><h1>{t(`Map`)}</h1></div>
+        <div id="map" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcMap`)}</h1></div>
         <MapComponent work={arc.work}/>
         <div id="gallery" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcGallery`)}</h1></div>
         <GalleryComponent work={arc.work}/>
