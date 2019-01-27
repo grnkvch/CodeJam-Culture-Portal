@@ -3,7 +3,7 @@ import List from '../components/list'
 import Layout from '../components/layout'
 import "./index.css";
 
-class IndexPage extends React.Component
+class SearchPage extends React.Component
   {
     constructor({data}) {
       super({data});
@@ -32,7 +32,7 @@ class IndexPage extends React.Component
     }
   }
 
-export default IndexPage
+export default SearchPage
 
 export const pageQuery = graphql`
   query SearchQuery {
