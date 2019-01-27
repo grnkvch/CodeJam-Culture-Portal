@@ -74,6 +74,7 @@ query authorOfTheDay {
       img
       date
       path
+      vita
      }
     }
   }`
