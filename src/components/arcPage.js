@@ -31,7 +31,7 @@ const arcPage = ({data, t}) => {
         <div style={{ textAlign: 'center', fontSize: '20px' }}>{arc.vita}</div>
         <div id="timeline" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcTimeline`)}</h1></div>
         <TimeLineComponent  timelineData={arc.timelineData} />
-        <div id="masterpiece" className="title" style={{ textAlign: 'center'}}><h1>{t(`Masterpiece`)}</h1></div>
+        <div id="masterpiece" className="title" style={{ textAlign: 'center'}}><h1>{t(`masterpiece`)}</h1></div>
         <TableComponent work={arc.work} />
         <div id="youtube" className="title" style={{ textAlign: 'center'}}><h1>Youtube</h1></div>
         <YoutubeComponent videoId={arc.videoId} t={ t } />

@@ -1,9 +1,11 @@
 import { Link } from 'gatsby-plugin-i18next';
 import React from 'react'
-import "./list.css";
+import "./list.css"
 
 export default class list extends React.Component {
   render() {
+    console.error(this.props);
+    if (!this.props.items) return (<li>{this.props.t(`srchNoResults`)}</li>)
     if (this.props.items.length) {
         return (
         <ul class="arcitechList">
@@ -19,7 +21,7 @@ export default class list extends React.Component {
         </ul>
       );
     } else {
-      return (<li>{this.props.t(`srchNoResults`)}</li>)
+      return (<li>{this.props.t(`srchAnotherLanguage`)}</li>)
     }
   }
 }
