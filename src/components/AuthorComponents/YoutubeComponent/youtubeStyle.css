@@ -10,4 +10,13 @@ div.openModal {
     box-shadow: 0 -3px #4a84b4 inset;
     transition: 0.2s;
   } 
-div.openModal:hover { background: #3fa9ff; }
+
+div.openModal:hover {
+  background: #3fa9ff;
+  cursor: pointer;
+}
+
+.modal-video-close-btn:hover {
+  cursor: pointer;
+}
+

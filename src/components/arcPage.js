@@ -5,7 +5,8 @@ import TimeLineComponent from './AuthorComponents/TimeLineComponent/TimeLineComp
 import YoutubeComponent from './AuthorComponents/YoutubeComponent/YoutubeComponent';
 import MapComponent from './AuthorComponents/MapComponent/MapComponent';
 import Layout from './layout';
-import Header from './AuthorComponents/HeaderComponent/HeaderComponent';
+import PageNavigation from './AuthorComponents/pageNavigation/pageNavigation';
+import Header from './header';
 import TableComponent from './AuthorComponents/TableComponent/TableComponent';
 import GalleryComponent from './AuthorComponents/GalleryComponent/GalleryComponent';
 import './AuthorComponents/author.css';
@@ -15,6 +16,7 @@ const arcPage = ({data}) => {
   return (
     <Fragment>
       <Header />
+      <PageNavigation />
       <div className="image-title" style={{marginTop: '120px'}}><img src={image} alt="Author's picture" /></div>
       <div style={{ textAlign: 'center', fontSize: '30px' }}>{arc.name}</div>
       <div style={{ textAlign: 'center', fontSize: '20px' }}>{arc.vita}</div>
