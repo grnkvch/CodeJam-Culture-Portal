@@ -1,5 +1,5 @@
 import React from 'react';
-import './headerStyle.css';
+import './pageNavigationStyle.css';
 import { Link } from 'gatsby';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,14 +10,14 @@ import { faMapMarked } from '@fortawesome/free-solid-svg-icons';
 import { faTable } from '@fortawesome/free-solid-svg-icons';
 import { faImages } from '@fortawesome/free-solid-svg-icons';
 
-class HeaderComponent extends React.Component {
+class pageNavigation extends React.Component {
     constructor(){
         super();
     }
     render(){
         return (
-        <div className="header">
-            <div className="header-right">
+        <div className="pageNavigationWrapper">
+            <div className="pageNavigation">
                 <a className="active" href="/"><FontAwesomeIcon icon = {faHome} /></a>
                 <a className="active" href="#timeline"><FontAwesomeIcon icon = {faCalendarAlt} /></a>
                 <a className="active" href="#youtube"><FontAwesomeIcon icon = {faYoutube} /></a>
@@ -28,4 +28,4 @@ class HeaderComponent extends React.Component {
         </div>);
     }
 }
-export default HeaderComponent;
+export default pageNavigation;
