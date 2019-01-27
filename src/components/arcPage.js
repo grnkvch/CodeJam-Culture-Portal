@@ -26,7 +26,7 @@ const arcPage = ({data, t}) => {
     <Layout>
       <Fragment>                                                          
         <PageNavigation /> 
-        <div className="image-title" style={{marginTop: '120px'}}><img style={{width:"250px", height:"300px"}} src={image} alt="Author's picture" /></div>
+        <div className="image-title"><img src={image} alt="Author's picture" /></div>
         <div style={{ textAlign: 'center', fontSize: '30px' }}>{arc.name}</div>
         <div style={{ textAlign: 'center', fontSize: '20px' }}>{arc.vita}</div>
         <div id="timeline" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcTimeline`)}</h1></div>
