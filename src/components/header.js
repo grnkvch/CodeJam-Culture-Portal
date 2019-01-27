@@ -24,12 +24,12 @@ const Header = ({ t }) => (
           to="/"
           style={{textDecoration: `none`}}
         >
-          {t(`Архитекторы Беларуси`)}
+          {t(`headTitle`)}
         </Link>
       </h1>
       <nav className="navHeader">
-        <div><Link to="/">На главную</Link></div>
-        <div><Link to="/search">К списку архитекторов</Link></div>
+        <div><Link to="/">{t(`headMain`)}</Link></div>
+        <div><Link to="/search">{t(`headToList`)}</Link></div>
       </nav>
       <div
       style={{
