@@ -24,5 +24,7 @@
   "indDescrFours": "The historical chronicle, captured in documents, resolutions, resolutions, opens the curtain of time for us, conveys the style of creativity and leadership, the mood and aspirations of several generations of architects. All this is read between the lines of documents and in the author's works. In them - the spirit of the era, complex and ambiguous, life and creative impulses of people who devoted themselves to architecture. In them - the history of the creative community of people. And above all this is the breath of Eternity.",
   "indDescrFifth": "We turned the last page of the chronicle of the Belarusian Union of Architects. But not the last in his work. Time will enter new names, new ideas, new objects. But it is in the future. And today we bring sincere thanks to all the architects for their work.",
   "srchTitle": "Belarusian architects",
-  "srchPlaceholder": "Search"
+  "srchPlaceholder": "Search",
+  "srchNoResults": "There's no results...",
+  "srchAnotherLanguage": "Try change requested language for search..."
 }

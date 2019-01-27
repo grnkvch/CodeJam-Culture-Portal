@@ -22,7 +22,7 @@ class SearchPage extends React.Component
       return (<Layout>
         <h2>{this.t(`srchTitle`)}</h2>
         <input type="search" placeholder={this.t(`srchPlaceholder`)} onChange={this.handleChange}></input>
-        <List items={this.state.items} />
+        <List items={this.state.items} t={this.t} />
       </Layout>
     )
     }
