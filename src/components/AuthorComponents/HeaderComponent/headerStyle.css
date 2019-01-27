@@ -1,10 +1,8 @@
 .header {
-  background-color: #f1f1f1;
   padding: 20px 10px;
   position: fixed;
   top:0;
   width:100%;
-  z-index: 9999;
 }
 
 .header a {
@@ -35,7 +33,10 @@
 }
 
 .header-right {
-  float: right;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 500px) {
