@@ -4,8 +4,9 @@ import ModalVideo from 'react-modal-video';
 import './youtubeStyle.css';
 import '../../layout.scss';
 class YoutubeComponent extends React.Component {
-  constructor() {
-    super();
+  constructor({ t }) {
+    super({ t });
+    this.t = t;
     this.state = {
       isOpen: false,
     };
@@ -20,7 +21,7 @@ class YoutubeComponent extends React.Component {
     return (
       <Fragment>
         <ModalVideo channel="youtube" isOpen={this.state.isOpen} videoId={this.props.videoId} onClose={() => this.setState({ isOpen: false })} />
-        <div className="openModal" onClick={this.openModal}>Watch the video</div>
+        <div className="openModal" onClick={this.openModal}>{this.t(`arcVideo`)}</div>
       </Fragment>
     );
   }

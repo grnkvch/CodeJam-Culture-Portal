@@ -23,10 +23,10 @@ const arcPage = ({data, t}) => {
   const arc = data.javascriptFrontmatter.frontmatter;
   const image = require(`../images/${arc.img}`);
   return (   
-  <Layout>
-  <Fragment>
-        <PageNavigation />
-        <div className="image-title" style={{marginTop: '120px'}}><img src={image} alt="Author's picture" /></div>
+    <Layout>
+      <Fragment>                                                          
+        <PageNavigation /> 
+        <div className="image-title" style={{marginTop: '120px'}}><img style={{width:"250px", height:"300px"}} src={image} alt="Author's picture" /></div>
         <div style={{ textAlign: 'center', fontSize: '30px' }}>{arc.name}</div>
         <div style={{ textAlign: 'center', fontSize: '20px' }}>{arc.vita}</div>
         <div id="timeline" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcTimeline`)}</h1></div>
@@ -34,8 +34,8 @@ const arcPage = ({data, t}) => {
         <div id="masterpiece" className="title" style={{ textAlign: 'center'}}><h1>{t(`Masterpiece`)}</h1></div>
         <TableComponent work={arc.work} />
         <div id="youtube" className="title" style={{ textAlign: 'center'}}><h1>Youtube</h1></div>
-        <YoutubeComponent videoId={arc.videoId} />
-        <div id="map" className="title" style={{ textAlign: 'center'}}><h1>{t(`Map`)}</h1></div>
+        <YoutubeComponent videoId={arc.videoId} t={ t } />
+        <div id="map" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcMap`)}</h1></div>
         <MapComponent work={arc.work}/>
         <div id="gallery" className="title" style={{ textAlign: 'center'}}><h1>{t(`arcGallery`)}</h1></div>
         <GalleryComponent work={arc.work}/>
