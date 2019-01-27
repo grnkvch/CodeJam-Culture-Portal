@@ -1,8 +1,9 @@
 .header {
-  padding: 20px 10px;
   position: fixed;
-  top:0;
-  width:100%;
+  top: 0;
+  width: 100%;
+  padding: 20px 10px;
+  z-index: 9999;
 }
 
 .header a {
@@ -28,15 +29,19 @@
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: rgba(30, 144, 255, 1);
   color: white;
 }
 
 .header-right {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   position: fixed;
   right: 0;
   z-index: 9999;
+}
+
+.header-right > a:hover {
+  background-color: rgb(45, 112, 179);
 }
 
 @media screen and (max-width: 500px) {
@@ -48,5 +53,6 @@
 
   .header-right {
     float: none;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
