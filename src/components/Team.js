@@ -11,7 +11,7 @@ class Team extends React.Component {
 	render(){
 		return (
 	 		<div>
-	 			<h3 
+	 			<h3
 	 				style={{textAlign:'center', margin:"40px 0 20px 0"}}>
 	 				Сайт делала команда из пяти разработчиков
 	 			</h3>

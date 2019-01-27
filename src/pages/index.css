@@ -1,8 +1,12 @@
 *{
 	font-family: sans-serif;
 }
+h3{
+	text-align: center; 
+}
 .description{
 	text-indent: 20px;
+	text-align: justify;
 }
 .Balashov{
 	color: #999;

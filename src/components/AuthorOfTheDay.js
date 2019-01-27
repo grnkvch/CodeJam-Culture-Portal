@@ -12,8 +12,7 @@ class AuthorOfTheDay extends React.Component {
 		console.log();
 		return (
 	 		<div>
-	 			<img src="/"></img>
-	 			<p>Текст</p>
+	 			<h3>Текст</h3>
 	 		</div>
 		 )
 	}
