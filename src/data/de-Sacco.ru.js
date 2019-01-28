@@ -6,6 +6,7 @@ exports.frontmatter = {
   img: 'de-Sacco.jpg',
   videoId: 'JNMltVazEP8',
   lng: 'ru',
+  birthPlace: 'Верона, Италия',
   timelineData: [
     {
       date: '1768',
