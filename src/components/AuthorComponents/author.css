@@ -11,13 +11,11 @@ div {
     margin-bottom:5px;
 }
 .image-title {
-    margin-top:20px;
+    margin: 100px auto 30px auto;
     display: flex;
     justify-content: center;
-    
 }
-
 .image-title img {
-    border:5px solid #61b8ff;
-    border-radius: 50%;
+    height: 300px;
+    border-radius: 5px;
 }
