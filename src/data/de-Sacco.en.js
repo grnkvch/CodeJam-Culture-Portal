@@ -3,7 +3,7 @@ exports.frontmatter = {
   name: 'Giuseppe de Sacco',
   date: '1735 — 1798',
   vita: 'One of the largest architects of developed Baroque and Classicism, who worked in the territory of modern Belarus, in the XVIII century. The court architect of the king Stanislav August Poniatowski. Also worked in other regions of the Commonwealth. The ensembles of palace and park residences stand out in the works.',
-  img: 'de-Sako.jpg',
+  img: 'de-Sacco.jpg',
   videoId: 'JNMltVazEP8',
   lng: 'en',
   timelineData: [
