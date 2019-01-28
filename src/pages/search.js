@@ -29,12 +29,12 @@ class SearchPage extends React.Component
 
     handleChange(e) {
       if (!this.data.allJavascriptFrontmatter) return;
-      this.setState({
-        items: this.data.allJavascriptFrontmatter.edges.filter((item)=>{
-          if (!e.target.value) return true;
-          return item.node.frontmatter.name.toLowerCase().includes(e.target.value.toLowerCase())
-        })
-      })
+      let list = this.data.allJavascriptFrontmatter.edges.filter((item)=>{
+        if (!e.target.value) return true;
+        return item.node.frontmatter.name.toLowerCase().includes(e.target.value.toLowerCase())
+      });
+      if (!list.length) list = null;
+      this.setState({ items: list })
     }
   }
 
