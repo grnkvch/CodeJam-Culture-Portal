@@ -4,7 +4,6 @@ import "./list.css"
 
 export default class list extends React.Component {
   render() {
-    console.error(this.props);
     if (!this.props.items) return (<li>{this.props.t(`srchNoResults`)}</li>)
     if (this.props.items.length) {
         return (
