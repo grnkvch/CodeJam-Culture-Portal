@@ -44,8 +44,6 @@ module.exports = {
       options: {
         availableLngs: ['en', 'ru', 'by'],
         fallbackLng: 'en',
-        saveMissing: true,
-        debug: true,
       },
     },
     {
