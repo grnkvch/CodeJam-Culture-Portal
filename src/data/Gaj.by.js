@@ -1,5 +1,5 @@
 exports.frontmatter = {
-  path: '/Gaj',
+  path: '/Gaj/',
   name: 'Генрых Юльян Гай',
   date: '10 студзеня 1875 - 3 кастрычніка 1936',
   img: 'default.jpg',

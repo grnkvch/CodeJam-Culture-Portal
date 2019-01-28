@@ -1,5 +1,5 @@
 exports.frontmatter = {
-    path: '/Levin',
+    path: '/Levin/',
     name: "Леони́д Ме́нделевич Ле́вин",
     date:"25 июля 1936 — 1 марта 2014",
     img: "levin.jpg",

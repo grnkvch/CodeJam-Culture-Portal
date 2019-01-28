@@ -1,5 +1,5 @@
 exports.frontmatter = {
-  path: '/Baklanov',
+  path: '/Baklanov/',
   name: 'Mikhail Ivanovich Baklanov',
   date: 'January 30 (February 12) - January 23, 1990',
   img: 'baklanov.jpg',

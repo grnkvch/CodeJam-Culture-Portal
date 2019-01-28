@@ -21,7 +21,7 @@ const Header = ({ t }) => (
       </h1>
       <nav className="navHeader">
         <div><Link to="/">{t(`headMain`)}</Link></div>
-        <div><Link to="/search">{t(`headToList`)}</Link></div>
+        <div><Link to="/search/">{t(`headToList`)}</Link></div>
       </nav>
       <div
       style={{

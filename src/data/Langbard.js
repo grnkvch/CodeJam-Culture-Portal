@@ -1,5 +1,5 @@
 exports.frontmatter = {
-    path: '/Langbard',
+    path: '/Langbard/',
     name: "Ио́сиф Григо́рьевич (Ги́ршевич) Ла́нгбард",
     date:"6 (18) января 1882 - 3 января 1951",
     img: "langbard.jpg",

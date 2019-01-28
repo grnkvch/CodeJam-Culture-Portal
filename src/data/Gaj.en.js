@@ -1,5 +1,5 @@
 exports.frontmatter = {
-  path: '/Gaj',
+  path: '/Gaj/',
   name: 'Heinrich Julian Guy',
   date: 'January 10, 1875 - October 3, 1936',
   img: 'default.jpg',
