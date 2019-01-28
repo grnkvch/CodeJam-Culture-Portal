@@ -14,6 +14,7 @@
   "teamGreeting": "The site was made by a team of five developers",
   "errTitle": "NOT FOUND",
   "errDescription": "You just hit a route that does not exist... the sadness.",
+  "errPageLocalVer": "The locale version of this page hasn't created yet",
   "indDescrTitleP1": "Information on this portal is dedicated to ",
   "indDescrTitleP2": "\"Belarusian Union of Architects\"",
   "indDescrFirst": "The Belarusian Union of Architects is 70 years old. Its history is a part of the history of the country and the people, its creative activity. A long and complex path is passed - the path of search and embodiment, mistakes and achievements. And today's Belarus shows the world its beautiful renewed face thanks to the talent and skill, professional skill of the Architects, whose tireless work over the years has increased the treasury of Belarusian architecture.",

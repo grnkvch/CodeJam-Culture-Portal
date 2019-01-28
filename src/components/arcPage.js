@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { withNamespaces } from 'react-i18next';
 import { withI18next } from 'gatsby-plugin-i18next';
 
-
 import TimeLineComponent from './AuthorComponents/TimeLineComponent/TimeLineComponent';
 import YoutubeComponent from './AuthorComponents/YoutubeComponent/YoutubeComponent';
 import MapComponent from './AuthorComponents/MapComponent/MapComponent';
@@ -17,7 +16,7 @@ const arcPage = ({data, t}) => {
   
   if (!data.javascriptFrontmatter){
     return(<Layout>
-      <div style={{ textAlign: 'center', fontSize: '30px' }}>This version of page hasn't created yet</div>
+      <div style={{ textAlign: 'center', fontSize: '30px' }}>{t(`errPageLocalVer`)}</div>
     </Layout>)
   } 
   const arc = data.javascriptFrontmatter.frontmatter;
