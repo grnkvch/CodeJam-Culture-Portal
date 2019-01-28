@@ -46,6 +46,10 @@
 	background-color: #663399;
 	text-decoration: none;
 }
+.languageSelect {
+	margin-top: 5px;
+	margin-left: 5px;
+}
 @media only screen and (max-width: 650px) {
     .header-wrapper {
 		min-height: 220px;

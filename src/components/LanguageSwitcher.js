@@ -1,8 +1,9 @@
 import React from 'react';
 import { Language } from 'gatsby-plugin-i18next';
+import "./LanguageSwitcher.css"
 
 const LanguageSwitcher = ({ changeLng, lng, availableLngs }) => (
-  <select onChange={(e) => changeLng(e.target.value)}>
+  <select class="languageSelect" onChange={(e) => changeLng(e.target.value)}>
     {
       availableLngs.map((value) => (
         <option key={value} selected={lng === value}>{value}</option>
