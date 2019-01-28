@@ -12,7 +12,7 @@ const Header = ({ t }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 className="headLogo">
+      <h1 className="headLogo" id="toTop">
         <Link 
           to="/"
         >

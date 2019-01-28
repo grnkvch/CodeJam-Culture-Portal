@@ -45,6 +45,21 @@
   background-color: rgb(45, 112, 179);
 }
 
+.toTopWrapper {
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  width: 35px;
+  height: 25px;
+  z-index: 9999;
+}
+
+#topButton {
+  padding: 10px 10px;
+  background-color: rgba(46, 141, 236, 0.616);
+  color: azure;
+}
+
 @media screen and (max-width: 500px) {
   .pageNavigationWrapper a {
     float: none;
