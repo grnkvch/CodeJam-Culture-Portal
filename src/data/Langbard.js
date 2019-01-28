@@ -3,6 +3,8 @@ exports.frontmatter = {
     name: "Ио́сиф Григо́рьевич (Ги́ршевич) Ла́нгбард",
     date:"6 (18) января 1882 - 3 января 1951",
     img: "langbard.jpg",
+    videoId: 'dlQIlW3V-iU',
+    lng:"ru",
     vita: "Белорусский советский архитектор, заслуженный деятель искусств Белорусской ССР (1934), обладатель Гран-при Всемирной выставки в Париже, 1937, доктор архитектуры (с 1939 года). Является одним из выдающихся зодчих Европы XX века, чьё художественное наследие оказало значительное влияние на развитие современной архитектуры. Его архитектурные работы в большой степени повлияли на формирование облика города Минска и являются образцами белорусского зодчества.",
     timelineData: [
       {date: "6 (18) января 1882",
@@ -54,6 +56,8 @@ exports.frontmatter = {
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Gouvernementbelarus.JPG/1024px-Gouvernementbelarus.JPG"
       },
       {title: "Памятник Чапаеву (Самара)",
+       width: 53.19692825,
+       length: 50.09692701,
        date: "1932",
        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A7%D0%B0%D0%BF%D0%B0%D0%B5%D0%B2%D1%83.jpg/800px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A7%D0%B0%D0%BF%D0%B0%D0%B5%D0%B2%D1%83.jpg"
       },

@@ -1,0 +1,71 @@
+.authorOfTheDay {
+    position: relative;
+    display: grid;
+    grid-area: wrapper;
+    grid-template-columns: 50% auto 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "title title title"
+      "name name img"
+      "date  date img"
+      "p p img"
+      "but but img";
+    border: 1px solid #663399;
+    overflow: hidden;
+}
+.authorOfTheDay_title {
+    grid-area: title;
+    padding: 30px;
+    background: #663399; 
+    color: LightBlue;
+    padding: 10px;
+}
+
+.authorOfTheDay_name {
+    grid-area: name;
+    padding: 0px 10px ;
+    font-size: 1.2em;
+}
+.authorOfTheDay_date {
+    grid-area: date;
+    padding: 0px 10px;
+    color: #999;
+}
+.authorOfTheDay_img {
+    grid-area: img;
+    padding-right: 20px ;
+}
+.authorOfTheDay_but {
+    grid-area: but;
+    background: #663399;
+    color: LightBlue;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px ;
+}
+.authorOfTheDay_vita {
+    grid-area: p;
+    padding: 0px 10px ;
+}
+
+@media only screen and (max-width: 700px) {
+    .authorOfTheDay {
+        grid-template-columns: 100% ;
+        grid-template-areas: 
+          "title "
+          "name "
+          "date  "
+          "img"
+          "p "
+          "but ";
+    }
+    .authorOfTheDay_img {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .authorOfTheDay_but {
+        margin-left: 40%;
+    }
+  }

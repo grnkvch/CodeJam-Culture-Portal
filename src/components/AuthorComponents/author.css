@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    font-family: 'Lato', sans-serif;
+}
+.title {
+    color: #61b8ff;
+    padding:10px;
+    font-size: 60px;
+}
+div {
+    margin-bottom:5px;
+}
+.image-title {
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image-title img {
+    border:5px solid #61b8ff;
+    border-radius: 50%;
+}
