@@ -5,6 +5,7 @@ exports.frontmatter = {
   img: 'default.jpg',
   videoId: 'JNMltVazEP8',
   lng: 'en',
+  birthPlace: 'Warsaw, Kingdom of Poland, Russian Empire',
   vita: 'Architect and engineer of Polish origin, who at the beginning of the XX century. he worked in the Russian Empire and then in Poland. He worked in the neoclassical style. Author of projects of many buildings in Warsaw, Minsk, Kiev and other cities of the Russian Empire. In the interwar period - the Provincial architect in Pinsk.',
   timelineData: [
     {

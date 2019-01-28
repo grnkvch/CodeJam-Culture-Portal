@@ -7,6 +7,7 @@ exports.frontmatter = {
   vita: 'Беларускі савецкі архітэктар. Заслужаны архітэктар БССР (1969).',
   authorOfTheDay: 'true',
   lng: 'by',
+  birthPlace: 'с. Іванаўка (цяпер Волновахский раён Данецкай вобласці Украіны)',
   timelineData: [
     {
       date: '1932',

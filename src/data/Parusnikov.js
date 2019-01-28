@@ -6,6 +6,7 @@ exports.frontmatter = {
     img: 'parusnikov.jpg',
     videoId: 'mrfadR51D0I',
     lng:"ru",
+    birthPlace: 'Москва, Российская империя',
     timelineData: [
       {
         date: '1913 - 1918',

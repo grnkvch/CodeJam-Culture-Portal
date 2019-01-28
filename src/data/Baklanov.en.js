@@ -7,6 +7,7 @@ exports.frontmatter = {
   vita: 'Belarusian Soviet architect. Honored Architect of the Byelorussian SSR (1969).',
   authorOfTheDay: 'true',
   lng: 'en',
+  birthPlace: 'Ivanovka village (now the district Volnovakha Donetsk region of Ukraine)',
   timelineData: [
     {
       date: '1932',
