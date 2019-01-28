@@ -31,9 +31,9 @@
 }
 
 .arcitechList li:hover {
-	box-shadow: 0 0 20px rgba(25,140,200,.5);
+  box-shadow: 0 0 20px rgba(25,140,200,.5);
 }
 
-.arcitechList a {
+.arcitechList > a:hover {
 	text-decoration: none;
 }
