@@ -44,6 +44,15 @@
     border: none;
     cursor: pointer;
     margin: 10px ;
+    min-width:120px;
+    border: 3px solid #663399;
+    font-weight: bolder;
+}
+.authorOfTheDay_but:hover {
+    background: LightBlue;
+    color: #663399;
+    border: 3px solid #663399;
+    font-weight: bolder;
 }
 .authorOfTheDay_vita {
     grid-area: p;
