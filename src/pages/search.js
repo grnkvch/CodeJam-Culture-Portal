@@ -31,7 +31,9 @@ class SearchPage extends React.Component
       if (!this.data.allJavascriptFrontmatter) return;
       let list = this.data.allJavascriptFrontmatter.edges.filter((item)=>{
         if (!e.target.value) return true;
-        return item.node.frontmatter.name.toLowerCase().includes(e.target.value.toLowerCase())
+        return item.node.frontmatter.name.concat(item.node.frontmatter.birthPlace)
+                .toLowerCase()
+                  .includes(e.target.value.toLowerCase())
       });
       if (!list.length) list = null;
       this.setState({ items: list })
@@ -53,6 +55,7 @@ export const pageQuery = graphql`
           frontmatter {
             lng
             path
+            birthPlace
             name
           }
         }
