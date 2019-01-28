@@ -1,23 +1,24 @@
-
 .teamContainer{
 	text-align: center;
 	font-size: 0.8em;
 	height: 360px;
 	width: 164px;
-	box-shadow: 0 0 20px rgba(0,0,0,.5);
-	border-radius: 3px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
 	display: inline-block;
 	margin: 9px;
 	transition: 0.2s ease box-shadow;
+	overflow: hidden;
 }
 .teamContainer:hover{
 	box-shadow: 0 0 20px rgba(25,140,200,.5);
 }
-.teamContainer
-img{
-	border-radius: 3px;
-}
-
 .teamContainer svg:hover {
 	color: rebeccapurple;
+}
+.teamContainer_wrapper {
+	text-align: center;
+}
+.teamContainer_nickname {
+	color: gray;
+	font-weight: bold;
 }

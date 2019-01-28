@@ -10,7 +10,7 @@ import "./Team.css";
 class Team extends React.Component {
 	render(){
 		return (
-	 		<div>
+	 		<div className="teamContainer_wrapper">
 	 			<h3 
 	 				style={{textAlign:'center', margin:"40px 0 20px 0"}}>
 	 				Сайт делала команда из пяти разработчиков
@@ -19,7 +19,7 @@ class Team extends React.Component {
 	 				<div className="teamContainer" key={index}>
 		 				<img src={item.src}></img>
 			 			<p>{item.name}</p>	 				
-			 			<p>{item.nickname}</p>	
+			 			<p className="teamContainer_nickname">{item.nickname}</p>	
 			 			<a 
 			 				target="_blank" 
 			 				href={item.gitHub} 
