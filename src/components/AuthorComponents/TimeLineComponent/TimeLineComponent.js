@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
-import React from 'react';
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
-import idGenerator from 'react-id-generator';
+import React from 'react'
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react'
+import idGenerator from 'react-id-generator'
 
 class TimeLineComponent extends React.Component {
   constructor() {
-    super();
+    super()
   }
 
   render() {
@@ -24,17 +24,11 @@ class TimeLineComponent extends React.Component {
         }}
       >
         <h3 style={{ color: '#61b8ff' }}>{info.date}</h3>
-        <p>
-          {info.text}
-        </p>
+        <p>{info.text}</p>
       </TimelineItem>
-    ));
-    return (
-      <Timeline lineColor="#ddd">
-        {TimeLineItems}
-      </Timeline>
-    );
+    ))
+    return <Timeline lineColor="#ddd">{TimeLineItems}</Timeline>
   }
 }
 
-export default TimeLineComponent;
+export default TimeLineComponent

@@ -1,7 +1,7 @@
 import React from 'react'
-import { withI18next } from 'gatsby-plugin-i18next';
-import { withNamespaces } from 'react-i18next';
-import { graphql } from 'gatsby';
+import { withI18next } from 'gatsby-plugin-i18next'
+import { withNamespaces } from 'react-i18next'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -14,7 +14,7 @@ const NotFoundPage = ({ t }) => (
   </Layout>
 )
 
-export default withI18next()(withNamespaces()(NotFoundPage));
+export default withI18next()(withNamespaces()(NotFoundPage))
 
 export const query = graphql`
   query($lng: String!) {
@@ -22,4 +22,4 @@ export const query = graphql`
       ...TranslationFragment
     }
   }
-`;
+`
