@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react'
 import './leaflet.css'
 import idGenerator from 'react-id-generator'
@@ -24,11 +23,16 @@ class Map extends React.Component {
           <Popup>{places.title}</Popup>
         </Marker>
       ))
+      const bounds = Places.reduce((placesArr, places) => {
+        placesArr.push([places.width, places.length])
+       return placesArr;
+      }, []);
       return (
         <LeafletMap
+          bounds = {bounds}
           center={[Places[0].width, Places[0].length]}
           zoom={6}
-          maxZoom={15}
+          maxZoom={18}
           attributionControl
           zoomControl
           doubleClickZoom

@@ -97,6 +97,8 @@ exports.frontmatter = {
     },
     {
       title: 'Дом Красной армии в Минске',
+      width: 53.9022889,
+      length: 27.5643222,
       date: '1934 - 1939',
       img:
         'https://upload.wikimedia.org/wikipedia/commons/a/ad/%D0%94%D0%BE%D0%BC_%D0%BE%D1%84%D0%B8%D1%86%D0%B5%D1%80%D0%BE%D0%B2%2C_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA.JPG',
